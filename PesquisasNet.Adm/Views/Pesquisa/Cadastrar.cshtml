@@ -1,0 +1,130 @@
+﻿@{
+    ViewBag.Title = "Cadastrar";
+    Layout = "~/Views/Shared/LayoutAdm.cshtml";
+}
+
+@*public string Codigo { get; set; }
+public string Empresa { get; set; }
+public string Recrutador { get; set; }
+public string Titulo { get; set; }
+public string Texto { get; set; }
+public string Resumo { get; set; }
+public string ImagemPequena { get; set; }
+public string ImagemGrande { get; set; }
+public string Status { get; set; }
+public int? IdadeInicio { get; set; }
+public int? IdadeFim { get; set; }
+public DateTime DataInicio { get; set; }
+public DateTime DataFim { get; set; }
+public string Duracao { get; set; }
+public DateTime DataCriacao { get; set; }
+public decimal Renumeracao { get; set; }
+public decimal? FaixaSalarialDe { get; set; }
+public decimal? FaixaSalarialAte { get; set; }
+public bool Homem { get; set; }
+public bool Mulher { get; set; }
+public bool Fotos { get; set; }
+public bool Ativo { get; set; }*@
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">Criar Nova Pesquisa</h3>
+    </div>
+
+    <form action="~/Pesquisa/Cadastrar" method="post" class="form-horizontal" role="form">
+
+        <div class="panel-body">
+
+            <div class="form-group">
+                <label for="Cidade" class="col-sm-2 control-label">Ativo</label>
+                <div class="col-sm-4">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" />
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="Titulo" class="col-sm-2 control-label">Título</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control" id="Titulo" placeholder="Enter título">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="Resumo" class="col-sm-2 control-label">Resumo</label>
+                <div class="col-sm-4">
+                    <textarea name="Resumo" cols="" rows="2" class="form-control" maxlength="80"></textarea>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="Descricao" class="col-sm-2 control-label">Descrição</label>
+                <div class="col-sm-4">
+                    <textarea name="Descricao" rows="10" class="form-control" maxlength="400"></textarea>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="Texto" class="col-sm-2 control-label">Sexo</label>
+                <div class="col-sm-4">
+                    <div class="radio-inline">
+                        <label>
+                            <input id="Feminino" name="Sexo" type="radio" value="" checked />
+                            Indiferente
+                        </label>
+                    </div>
+                    <div class="radio-inline">
+                        <label>
+                            <input id="Masculino" name="Sexo" type="radio" value="M" />
+                            Masculino
+                        </label>
+                    </div>
+                    <div class="radio-inline">
+                        <label>
+                            <input id="Feminino" name="Sexo" type="radio" value="F" />
+                            Feminino
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="Cidade" class="col-sm-2 control-label">Cidade</label>
+                <div class="col-sm-4">
+                    <select class="form-control">
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="SP">São Paulo</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" />
+                            Eu aceito os termos e condições.
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="panel-footer" style="overflow:hidden;text-align:right;">
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-success btn-sm">Cadastrar</button>
+                    <a href="~/Pesquisa" class="btn btn-default btn-sm">Cancelar</a>
+                </div>
+            </div>
+        </div>
+
+    </form>
+</div>
+
+

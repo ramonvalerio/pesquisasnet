@@ -1,0 +1,335 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/LayoutSite.cshtml";
+}
+
+<div class="container">
+    <h1>@ViewBag.Usuario.Nome @ViewBag.Usuario.SobreNome</h1>
+    <div class="home-conteudo">
+        <div class="fotoperfil">
+            <img src="http://file.pesquisasnet.com/img/perfil/@ViewBag.Usuario.FotoPerfil">
+        </div>
+
+        <div class="textoperfil">
+            <ul>
+                <li>
+                    <span style="color:red">
+                        <p>Obs.: Por motivos de segurança de informação.</p>
+                        <p>Campos com '*' só poderão ser modificados através de solicitação por e-mail com justificativa.</p>
+                    </span>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <div class="texto01">Perfil Disponível:</div>
+                    <div class="texto-respn">@(ViewBag.Usuario.Ativo ? "Sim" : "Não")</div>
+                </li>
+                <li>
+                    <div class="texto01">RG<span style="color:red">*</span>:</div>
+                    <div class="texto-respn">
+                        @if (ViewBag.Usuario.Rg == null)
+                        {
+                            <span style="color: red;">Não informado</span>
+                        }
+                        else
+                        {
+                            @Html.Raw(ViewBag.Usuario.Rg)
+                        }
+                    </div>
+                </li>
+                <li>
+                    <div class="texto01">CPF<span style="color:red">*</span>:</div>
+                    <div class="texto-respn">
+                        @if (ViewBag.Usuario.Cpf == null)
+                        {
+                            <span style="color: red;">Não informado</span>
+                        }
+                        else
+                        {
+                            @Html.Raw(ViewBag.Usuario.Cpf)
+                        }
+                    </div>
+                </li>
+                <li>
+                    <div class="texto01">Data de Nascimento<span style="color:red">*</span>:</div>
+                    <div class="texto-respn">
+                        @if (ViewBag.Usuario.DataNascimento == null)
+                        {
+                            <span style="color: red;">Não informado</span>
+                        }
+                        else
+                        {
+                            @Html.Raw(ViewBag.Usuario.DataNascimento.ToString("dd/MM/yyyy"))
+                        }
+                    </div>
+                </li>
+                <li>
+                    <div class="texto01">Sexo<span style="color:red">*</span>:</div>
+                    <div class="texto-respn">
+                        @if (ViewBag.Usuario.Sexo == null)
+                        {
+                            <span style="color: red;">Não informado</span>
+                        }
+                        else
+                        {
+                            @Html.Raw((ViewBag.Usuario.Sexo.ToString() == "M" ? "Masculino" : "Feminino"))
+                        }
+                    </div>
+                </li>
+                <li>
+                    <div class="texto01">Telefone:</div>
+                    <div class="texto-respn">
+                        @if (ViewBag.Usuario.Telefone == null)
+                        {
+                            <span style="color: red;">Não informado</span>
+                        }
+                        else
+                        {
+                            @Html.Raw(ViewBag.Usuario.Telefone)
+                        }
+                    </div>
+                </li>
+                <li>
+                    <div class="texto01">Celular:</div>
+                    <div class="texto-respn">
+                        @if (ViewBag.Usuario.Celular == null)
+                        {
+                            <span style="color: red;">Não informado</span>
+                        }
+                        else
+                        {
+                            @Html.Raw(ViewBag.Usuario.Celular)
+                        }
+                    </div>
+                </li>
+                <li>
+                    <div class="texto01">Escolaridade:</div>
+                    <div class="texto-respn">
+                        @if (ViewBag.Usuario.Escolaridade == null)
+                        {
+                            <span style="color: red;">Não informado</span>
+                        }
+                        else
+                        {
+                            @Html.Raw(ViewBag.Usuario.Escolaridade)
+                        }
+                    </div>
+                </li>
+                <li>
+                    <div class="texto01">Profissão:</div>
+                    <div class="texto-respn">
+                        @if (ViewBag.Usuario.Profissao == null)
+                        {
+                            <span style="color: red;">Não informado</span>
+                        }
+                        else
+                        {
+                            @Html.Raw(ViewBag.Usuario.Profissao)
+                        }
+                    </div>
+                </li>
+                <li>
+                    <div class="texto01">E-mail:</div>
+                    <div class="texto-respn">
+                        @if (ViewBag.Usuario.Email == null)
+                        {
+                            <span style="color: red;">Não informado</span>
+                        }
+                        else
+                        {
+                            @Html.Raw(ViewBag.Usuario.Email)
+                        }
+                    </div>
+                </li>
+                <li>
+                    <div class="texto01">Cidade:</div>
+                    <div class="texto-respn">
+                        @if (ViewBag.Usuario.Cidade == null)
+                        {
+                            <span style="color: red;">Não informado</span>
+                        }
+                        else
+                        {
+                            @Html.Raw(ViewBag.Usuario.Cidade)
+                        }
+                    </div>
+                </li>
+                <li>
+                    <div class="texto01">Região:</div>
+                    <div class="texto-respn">
+                        @if (ViewBag.Usuario.Regiao == null)
+                        {
+                            <span style="color: red;">Não informado</span>
+                        }
+                        else
+                        {
+                            @Html.Raw(ViewBag.Usuario.Regiao)
+                        }
+                    </div>
+                </li>
+                <li>
+                    <div class="texto01">Disponibilidade:</div>
+                    <div class="texto-respn">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>Dia</td>
+                                    <td>Manhã</td>
+                                    <td>Tarde</td>
+                                    <td>Noite</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Domingo</td>
+                                    <td>
+                                        <input type="checkbox" disabled="disabled" />
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" disabled="disabled" />
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" disabled="disabled" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Segunda-feira</td>
+                                    <td>
+                                        <input type="checkbox" disabled="disabled" />
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" disabled="disabled" />
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" disabled="disabled" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Terça-feira</td>
+                                    <td>
+                                        <input type="checkbox" disabled="disabled" />
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" disabled="disabled" />
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" disabled="disabled" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Quarta-feira</td>
+                                    <td>
+                                        <input type="checkbox" disabled="disabled" />
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" disabled="disabled" />
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" disabled="disabled" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Quinta-feira</td>
+                                    <td>
+                                        <input type="checkbox" disabled="disabled" />
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" disabled="disabled" />
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" disabled="disabled" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Sexta-feira</td>
+                                    <td>
+                                        <input type="checkbox" disabled="disabled" />
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" disabled="disabled" />
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" disabled="disabled" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Sábado</td>
+                                    <td>
+                                        <input type="checkbox" disabled="disabled" />
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" disabled="disabled" />
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" disabled="disabled" />
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </li>
+                <li>
+                    <div class="texto01">Áreas de Interesse:</div>
+                    <div class="texto-respn">
+                        <table>
+                            <thead></thead>
+                            <tbody>
+                                @{
+                                    int contador = 0;
+
+                                    foreach (var categoria in ViewBag.Categorias)
+                                    {
+                                        if (contador == 0)
+                                        {
+                                            @Html.Raw("<tr>")
+                                        }
+
+                                        @Html.Raw("<td>")
+
+                                        bool existe = false;
+
+                                        foreach (var categoriaExistente in ViewBag.Usuario.AreasInteresse)
+                                        {
+                                            if (categoria.Nome == categoriaExistente.Nome)
+                                            {
+                                                existe = true;
+                                                break;
+                                            }
+                                        }
+
+                                        if (existe)
+                                        {
+                                            @Html.Raw("<input type='checkbox' disabled='disabled' checked />")
+                                        }
+                                        else
+                                        {
+                                            @Html.Raw("<input type='checkbox' disabled='disabled' />")
+                                        }
+
+                                        @categoria.Nome
+                                        @Html.Raw("</td>")
+
+                                        if (contador == 3)
+                                        {
+                                            @Html.Raw("</tr>")
+                                            contador = 0;
+                                        }
+                                        else
+                                        {
+                                            contador++;
+                                        }
+                                    }
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="clear"></div>
+        <div class="link-edit">
+            <a href="~/Perfil/Edit" class="btn-editar">Editar Perfil</a>
+        </div>
+    </div>
+
+</div>

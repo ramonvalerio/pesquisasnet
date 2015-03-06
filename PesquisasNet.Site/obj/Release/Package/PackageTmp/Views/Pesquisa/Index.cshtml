@@ -1,0 +1,40 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/LayoutSite.cshtml";
+}
+
+<h1>Pesquisas recentes</h1>
+<div class="home-conteudo">
+
+    @if (ViewBag.Pesquisas != null)
+    {
+        <ul>
+            @for (int i = 0; i < 12; i++)
+            {
+                <li>
+                    <img src="~/img/@ViewBag.Pesquisas[0].ImagemPequena">
+                    <p><span>Cod.:</span> @ViewBag.Pesquisas[0].Codigo</p>
+                    <p><span>Divulgação:</span> @DateTime.Now</p>
+
+
+                    @Html.ActionLink("Ver", "Detalhe", new { codigo = ViewBag.Pesquisas[0].Codigo }, new { @class = "btn-ver" })
+
+                    @*<a class="btn-ver" href="~/Pesquisa/Detalhe/@ViewBag.Pesquisas[0].Codigo">ver</a>*@
+                </li>
+            }
+
+            @*@foreach (var pes in ViewBag.Pesquisas)
+                {
+                    <li>
+                        <img src="~/img/@pes.ImagemPequena">
+                        <p><span>Cod.:</span> @pes.Codigo</p>
+                        <p><span>Divulgação:</span> @DateTime.Now</p>
+                        <a class="btn-ver" href="~/Pesquisa/Detalhe/@pes.Codigo">ver</a>
+                    </li>
+                }*@
+        </ul>
+    }
+
+</div>
+
+<div class="clear"></div>

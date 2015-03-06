@@ -1,0 +1,5 @@
+D:\Repositories\Rantec\PesquisasNet\PesquisasNet.Adm.Test\bin\Debug\PesquisasNet.Adm.Test.dll
+D:\Repositories\Rantec\PesquisasNet\PesquisasNet.Adm.Test\bin\Debug\PesquisasNet.Adm.Test.pdb
+D:\Repositories\Rantec\PesquisasNet\PesquisasNet.Adm.Test\obj\Debug\PesquisasNet.Adm.Test.dll
+D:\Repositories\Rantec\PesquisasNet\PesquisasNet.Adm.Test\obj\Debug\PesquisasNet.Adm.Test.pdb
+D:\Repositories\Rantec\PesquisasNet\PesquisasNet.Adm.Test\obj\Debug\PesquisasNet.Adm.Test.csprojResolveAssemblyReference.cache

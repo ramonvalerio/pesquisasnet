@@ -1,0 +1,22 @@
+﻿@{
+    ViewBag.Title = "Pesquisa";
+    Layout = "~/Views/Shared/LayoutSite.cshtml";
+}
+
+<h1>Resultado pesquisa</h1>
+<div class="home-conteudo">
+    <div class="fotoint">
+        <img src="http://file.pesquisasnet.com/img/pesquisa/@ViewBag.Pesquisa.ImagemPequena">
+    </div>
+    <div class="textointerno">
+        <h2>@ViewBag.Pesquisa.Titulo</h2>
+        <div class="data-valor">
+            <p>Data de Início: <span>@DateTime.Now</span></p>
+            <p>Remuneração: <span>R$@ViewBag.Pesquisa.Renumeracao</span></p>
+        </div>
+        <p>@ViewBag.Pesquisa.Texto</p>
+    </div>
+</div>
+
+<div class="clear"></div>
+<div class="voltar100"><a class="btn-voltar" href='javascript:history.back(1)'>Voltar</a></div>

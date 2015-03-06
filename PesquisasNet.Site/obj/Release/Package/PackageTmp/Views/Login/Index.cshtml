@@ -1,0 +1,57 @@
+﻿@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/LayoutLogin.cshtml";
+}
+
+<script src='https://www.google.com/recaptcha/api.js'></script>
+
+<script type="text/javascript">
+    $("#formCadastrar").validate();
+</script>
+
+<div class="destaquelogin">
+    <img src="~/img/destaquelogin.jpg">
+</div>
+
+<div class="cadastro">
+    <h2>Cadastre-se agora! É de GRAÇA!</h2>
+    <p><span font-weight bold;">Ganhe dinheiro com pesquisas remuneradas!</span></p>
+
+    <form id="formCadastrar" action="~/Login/Cadastrar" method="post">
+        <ul>
+            <li class="cadastroli">
+                <span>* Nome obrigatório</span>
+                <input type="text" name="Nome" class="inputcadastro" placeholder="Nome" />
+            </li>
+            <li class="cadastroli">
+                <span>* Sobrenome obrigatório</span>
+                <input type="text" name="SobreNome" class="inputcadastro" placeholder="Sobrenome" />
+            </li>
+
+            @*<li class="cadastroli">
+                    CPF
+                    <span>* CPF obrigatório</span>
+                    <input type="text" name="Cpf" class="inputcadastro" placeholder="Ex.: 057.145.147-00" />
+                </li>*@
+            <li>
+                <span>* E-mail obrigatório</span>
+                <input type="text" name="Email" class="inputcadastro90" placeholder="E-mail" />
+            </li>
+            <li>
+                <span>* Senha obrigatório</span>
+                <input type="password" name="Senha" class="inputcadastro90" placeholder="Senha (seis ou mais caracteres)" />
+            </li>
+            <li>
+                <span>* Senha obrigatório</span>
+                <input type="password" name="ConfirmarSenha" class="inputcadastro90" placeholder="Confirmar Senha" />
+            </li>
+            <li>
+                <button type="submit" class="btn-cadastrar">Cadastre-se agora</button>
+            </li>
+        </ul>
+
+        @*<div class="g-recaptcha" data-sitekey="6Lce_QETAAAAAB_o4_p1ZeCIIN6qAQo-Y1qCu3u1"></div>*@
+
+    </form>
+</div>
+<div class="clear"></div>

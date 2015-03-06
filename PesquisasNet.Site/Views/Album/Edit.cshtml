@@ -1,0 +1,55 @@
+﻿@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/Shared/LayoutSite.cshtml";
+}
+
+<h1>Meu Álbum</h1>
+<div class="meualbum">
+    <form>
+        <div class="titlealbum">
+            <ul>
+                <li><p>Titulo do Álbum:</p></li>
+                <li><input type="text" name="titlealbum" class="inputalbum" placeholder="Lorem ipsum dolor sit amet"></li>
+            </ul>
+        </div>
+        <div class="fotos-album">
+            <ul>
+                <li>
+                    <p>Foto 01</p>
+                    <a href="" class="excluirfoto"><i class="icon-trash"></i> excluir foto</a>
+                    <img src="img/foto-04.jpg">
+                </li>
+                <li>
+                    <p>Foto 01</p>
+                    <a href="" class="excluirfoto"><i class="icon-trash"></i> excluir foto</a>
+                    <img src="img/foto-02.jpg">
+                </li>
+                <li>
+                    <p>Foto 01</p>
+                    <a href="" class="excluirfoto"><i class="icon-trash"></i> excluir foto</a>
+                    <img src="img/foto-03.jpg">
+                </li>
+                <li>
+                    <p>Foto 01</p>
+                    <a href="" class="excluirfoto"><i class="icon-trash"></i> excluir foto</a>
+                    <img src="img/foto-01.jpg">
+                </li>
+                <li>
+                    <p>Foto 01</p>
+                    <a href="" class="excluirfoto"><i class="icon-trash"></i> excluir foto</a>
+                    <img src="img/foto-03.jpg">
+                </li>
+                <li>
+                    <p>Foto 01</p>
+                    <a href="" class="excluirfoto"><i class="icon-trash"></i> excluir foto</a>
+                    <img src="img/foto-04.jpg">
+                </li>
+            </ul>
+        </div>
+        <div class="editaralbum">
+            <input type="submit" class="btn-salvar" value="Salvar">
+        </div>
+    </form>
+</div>
+<div class="clear"></div>
+<div class="voltar100"><a class="btn-voltar" href='javascript:history.back(1)'>Voltar</a></div>
