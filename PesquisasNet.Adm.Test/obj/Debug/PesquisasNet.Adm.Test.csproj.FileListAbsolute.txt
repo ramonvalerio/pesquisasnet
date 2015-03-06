@@ -3,3 +3,8 @@ D:\Repositories\Rantec\PesquisasNet\PesquisasNet.Adm.Test\bin\Debug\PesquisasNet
 D:\Repositories\Rantec\PesquisasNet\PesquisasNet.Adm.Test\obj\Debug\PesquisasNet.Adm.Test.dll
 D:\Repositories\Rantec\PesquisasNet\PesquisasNet.Adm.Test\obj\Debug\PesquisasNet.Adm.Test.pdb
 D:\Repositories\Rantec\PesquisasNet\PesquisasNet.Adm.Test\obj\Debug\PesquisasNet.Adm.Test.csprojResolveAssemblyReference.cache
+D:\repositories\GitHub\PesquisasNet\PesquisasNet.Adm.Test\bin\Debug\PesquisasNet.Adm.Test.dll
+D:\repositories\GitHub\PesquisasNet\PesquisasNet.Adm.Test\bin\Debug\PesquisasNet.Adm.Test.pdb
+D:\repositories\GitHub\PesquisasNet\PesquisasNet.Adm.Test\obj\Debug\PesquisasNet.Adm.Test.dll
+D:\repositories\GitHub\PesquisasNet\PesquisasNet.Adm.Test\obj\Debug\PesquisasNet.Adm.Test.pdb
+D:\repositories\GitHub\PesquisasNet\PesquisasNet.Adm.Test\obj\Debug\PesquisasNet.Adm.Test.csprojResolveAssemblyReference.cache

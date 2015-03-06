@@ -13,14 +13,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PesquisasNet.Site", "Pesqui
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PesquisasNet.Adm", "PesquisasNet.Adm\PesquisasNet.Adm.csproj", "{D619F3CE-77B1-4A80-B261-05C5158D0840}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{7FAC13EA-ED03-4E8D-86D1-C923E6F10D08}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PesquisasNet.Adm.Test", "PesquisasNet.Adm.Test\PesquisasNet.Adm.Test.csproj", "{C15389FE-7606-4919-848D-4F3D9119CE58}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{82EE0049-5D68-4F66-8543-CD83A51D98C5}"
 	ProjectSection(SolutionItems) = preProject
 		.nuget\NuGet.Config = .nuget\NuGet.Config
 		.nuget\NuGet.exe = .nuget\NuGet.exe
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PesquisasNet.Adm.Test", "PesquisasNet.Adm.Test\PesquisasNet.Adm.Test.csproj", "{C15389FE-7606-4919-848D-4F3D9119CE58}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
