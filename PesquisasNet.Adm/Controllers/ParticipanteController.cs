@@ -15,5 +15,10 @@ namespace PesquisasNet.Adm.Controllers
 
             return View();
         }
+
+        public ActionResult Detalhe()
+        {
+            return View();
+        }
     }
 }

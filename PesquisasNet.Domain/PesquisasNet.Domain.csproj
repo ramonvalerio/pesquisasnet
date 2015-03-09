@@ -41,6 +41,7 @@
     <Compile Include="Interfaces\Services\IUsuarioService.cs" />
     <Compile Include="Modelo\Categoria.cs" />
     <Compile Include="Modelo\Colaborador.cs" />
+    <Compile Include="Modelo\Criterio.cs" />
     <Compile Include="Modelo\DiaSemana.cs" />
     <Compile Include="Modelo\Disponibilidade.cs" />
     <Compile Include="Modelo\Grupo.cs" />

@@ -40,12 +40,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="AWS.SessionProvider">
-      <HintPath>..\packages\AWS.SessionProvider.2.3.24.1\lib\net45\AWS.SessionProvider.dll</HintPath>
-    </Reference>
-    <Reference Include="AWSSDK, Version=2.3.24.1, Culture=neutral, PublicKeyToken=9f476d3089b52be3, processorArchitecture=MSIL">
+    <Reference Include="AWS.SessionProvider, Version=2.3.24.3, Culture=neutral, PublicKeyToken=9f476d3089b52be3, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\AWSSDK.2.3.24.1\lib\net45\AWSSDK.dll</HintPath>
+      <HintPath>..\packages\AWS.SessionProvider.2.3.24.3\lib\net45\AWS.SessionProvider.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK">
+      <HintPath>..\packages\AWSSDK.2.3.24.3\lib\net45\AWSSDK.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Newtonsoft.Json">

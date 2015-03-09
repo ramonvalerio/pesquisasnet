@@ -19,3 +19,7 @@ D:\repositories\GitHub\PesquisasNet\PesquisasNet.Domain\bin\Debug\PesquisasNet.D
 D:\repositories\GitHub\PesquisasNet\PesquisasNet.Domain\bin\Debug\PesquisasNet.Domain.pdb
 D:\repositories\GitHub\PesquisasNet\PesquisasNet.Domain\obj\Debug\PesquisasNet.Domain.dll
 D:\repositories\GitHub\PesquisasNet\PesquisasNet.Domain\obj\Debug\PesquisasNet.Domain.pdb
+D:\GitHub\PesquisasNet\PesquisasNet.Domain\bin\Debug\PesquisasNet.Domain.dll
+D:\GitHub\PesquisasNet\PesquisasNet.Domain\bin\Debug\PesquisasNet.Domain.pdb
+D:\GitHub\PesquisasNet\PesquisasNet.Domain\obj\Debug\PesquisasNet.Domain.dll
+D:\GitHub\PesquisasNet\PesquisasNet.Domain\obj\Debug\PesquisasNet.Domain.pdb

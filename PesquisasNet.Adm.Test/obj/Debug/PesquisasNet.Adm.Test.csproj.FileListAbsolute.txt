@@ -8,3 +8,8 @@ D:\repositories\GitHub\PesquisasNet\PesquisasNet.Adm.Test\bin\Debug\PesquisasNet
 D:\repositories\GitHub\PesquisasNet\PesquisasNet.Adm.Test\obj\Debug\PesquisasNet.Adm.Test.dll
 D:\repositories\GitHub\PesquisasNet\PesquisasNet.Adm.Test\obj\Debug\PesquisasNet.Adm.Test.pdb
 D:\repositories\GitHub\PesquisasNet\PesquisasNet.Adm.Test\obj\Debug\PesquisasNet.Adm.Test.csprojResolveAssemblyReference.cache
+D:\GitHub\PesquisasNet\PesquisasNet.Adm.Test\bin\Debug\PesquisasNet.Adm.Test.dll
+D:\GitHub\PesquisasNet\PesquisasNet.Adm.Test\bin\Debug\PesquisasNet.Adm.Test.pdb
+D:\GitHub\PesquisasNet\PesquisasNet.Adm.Test\obj\Debug\PesquisasNet.Adm.Test.dll
+D:\GitHub\PesquisasNet\PesquisasNet.Adm.Test\obj\Debug\PesquisasNet.Adm.Test.pdb
+D:\GitHub\PesquisasNet\PesquisasNet.Adm.Test\obj\Debug\PesquisasNet.Adm.Test.csprojResolveAssemblyReference.cache

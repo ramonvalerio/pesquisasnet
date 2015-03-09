@@ -182,6 +182,7 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\ColaboradorController.cs" />
+    <Compile Include="Controllers\CriterioController.cs" />
     <Compile Include="Controllers\FaturamentoController.cs" />
     <Compile Include="Controllers\GrupoColaboradorController.cs" />
     <Compile Include="Controllers\GrupoController.cs" />
@@ -220,6 +221,9 @@
     <Content Include="Views\Colaborador\Detalhe.cshtml" />
     <Content Include="Views\Questionario\Cadastrar.cshtml" />
     <Content Include="Views\Faturamento\Index.cshtml" />
+    <Content Include="Views\Participante\Detalhe.cshtml" />
+    <Content Include="Views\Pesquisa\Editar.cshtml" />
+    <Content Include="Views\Criterio\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
