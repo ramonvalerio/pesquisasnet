@@ -12,5 +12,15 @@ namespace PesquisasNet.Adm.Controllers
         {
             return View();
         }
+
+        public ActionResult Cadastrar()
+        {
+            return View();
+        }
+
+        public ActionResult Ficha()
+        {
+            return View();
+        }
     }
 }

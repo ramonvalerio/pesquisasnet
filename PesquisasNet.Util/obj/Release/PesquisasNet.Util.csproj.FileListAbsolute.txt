@@ -9,3 +9,8 @@ D:\Repositories\Rantec\PesquisasNet\PesquisasNet.Util\bin\Release\WhatsAppApi.dl
 D:\Repositories\Rantec\PesquisasNet\PesquisasNet.Util\obj\Release\PesquisasNet.Util.csprojResolveAssemblyReference.cache
 D:\Repositories\Rantec\PesquisasNet\PesquisasNet.Util\obj\Release\PesquisasNet.Util.dll
 D:\Repositories\Rantec\PesquisasNet\PesquisasNet.Util\obj\Release\PesquisasNet.Util.pdb
+D:\GitHub\PesquisasNet\PesquisasNet.Util\bin\Release\PesquisasNet.Util.dll
+D:\GitHub\PesquisasNet\PesquisasNet.Util\bin\Release\PesquisasNet.Util.pdb
+D:\GitHub\PesquisasNet\PesquisasNet.Util\bin\Release\WhatsAppApi.dll
+D:\GitHub\PesquisasNet\PesquisasNet.Util\obj\Release\PesquisasNet.Util.dll
+D:\GitHub\PesquisasNet\PesquisasNet.Util\obj\Release\PesquisasNet.Util.pdb

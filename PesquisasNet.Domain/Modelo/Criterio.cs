@@ -11,5 +11,7 @@ namespace PesquisasNet.Domain.Modelo
         public string Nome { get; set; }
 
         public string Descricao { get; set; }
+
+        public List<Variavel> Variaveis { get; set; }
     }
 }

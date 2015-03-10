@@ -3,12 +3,10 @@
     Layout = "~/Views/Shared/LayoutAdm.cshtml";
 }
 
-<h3>Critérios de Classificação</h3>
-
 <div class="row">
     <div class="col-md-12">
         <div class="btn-group">
-            <a href="~/Projeto/Cadastrar" class="btn btn-primary">Novo Projeto</a>
+            <a href="~/Criterio/Cadastrar" class="btn btn-primary">Novo Critério</a>
         </div>
 
         <div class="btn-group">
@@ -19,10 +17,8 @@
                 <span class="sr-only">Toggle Dropdown</span>
             </button>
             <ul class="dropdown-menu" role="menu">
-                <li><a href="#">Adicionar Pesquisas no Projeto</a></li>
-                <li><a href="#">Excluir Projeto</a></li>
-                <li><a href="#">Editar Projeto</a></li>
-                <li><a href="#">Remover Pesquisas do Projeto</a></li>
+                <li><a href="#">Excluir Critério</a></li>
+                <li><a href="#">Editar Critério</a></li>
                 @*<li class="divider"></li>
                     <li><a href="#">Separated link</a></li>*@
             </ul>
@@ -44,11 +40,13 @@
         <div class="table-responsive">
             <table id="mytable" class="table table-bordred table-striped">
                 <thead>
-                <th><input type="checkbox" id="checkall" /></th>
-                <th>Critério</th>
-                <th>Organização</th>
-                <th>Data Criação</th>
-                <th>Ativo</th>
+                    <tr>
+                        <th><input type="checkbox" id="checkall" /></th>
+                        <th>Critério</th>
+                        <th>Organização</th>
+                        <th>Data Criação</th>
+                        <th>Ativo</th>
+                    </tr>
                 </thead>
                 <tbody>
                     <tr>
@@ -64,42 +62,42 @@
                         <td><input type="checkbox" class="checkthis" /></td>
                         <td>SAE</td>
                         <td>Secretaria de Assuntos Estratégicos, do governo federal.</td>
-                        <td>25/01/2015</td>
-                        <td>Sim</td>
+                        <td></td>
+                        <td>Não</td>
                     </tr>
                     <tr>
                         <td><input type="checkbox" class="checkthis" /></td>
                         <td>FGV</td>
                         <td>Centro de Políticas Sociais</td>
-                        <td>25/01/2015</td>
-                        <td>Sim</td>
+                        <td></td>
+                        <td>Não</td>
                     </tr>
                     <tr>
                         <td><input type="checkbox" class="checkthis" /></td>
                         <td>IBGE</td>
                         <td>Instituto Brasileiro de Geografia e Estatística</td>
-                        <td>25/01/2015</td>
-                        <td>Sim</td>
+                        <td></td>
+                        <td>Não</td>
                     </tr>
                     <tr>
                         <td><input type="checkbox" class="checkthis" /></td>
                         <td>Kamakura e Mazzon</td>
                         <td>Critério de Classificação Econômica Brasil</td>
                         <td>12/08/2013</td>
-                        <td>Sim</td>
+                        <td>Não</td>
                     </tr>
                     <tr>
                         <td><input type="checkbox" class="checkthis" /></td>
                         <td>FEA</td>
                         <td>...</td>
-                        <td>2015</td>
+                        <td></td>
                         <td>Não</td>
                     </tr>
                     <tr>
                         <td><input type="checkbox" class="checkthis" /></td>
                         <td>PesquisasNet</td>
                         <td>...</td>
-                        <td>2015</td>
+                        <td></td>
                         <td>Não</td>
                     </tr>
                 </tbody>

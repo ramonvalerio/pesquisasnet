@@ -7,7 +7,7 @@
     <h1>@ViewBag.Usuario.Nome @ViewBag.Usuario.SobreNome</h1>
     <div class="home-conteudo">
         <div class="fotoperfil">
-            <img src="~/img/foto_01.jpg">
+            <img src="http://file.pesquisasnet.com/img/perfil/@ViewBag.Usuario.FotoPerfil">
         </div>
 
         <div class="textoperfil">
@@ -142,15 +142,28 @@
                     </div>
                 </li>
                 <li>
-                    <div class="texto01">Localidade:</div>
+                    <div class="texto01">Cidade:</div>
                     <div class="texto-respn">
-                        @if (ViewBag.Usuario.Localidade == null)
+                        @if (ViewBag.Usuario.Cidade == null)
                         {
                             <span style="color: red;">Não informado</span>
                         }
                         else
                         {
-                            @Html.Raw(ViewBag.Usuario.Localidade)
+                            @Html.Raw(ViewBag.Usuario.Cidade)
+                        }
+                    </div>
+                </li>
+                <li>
+                    <div class="texto01">Região:</div>
+                    <div class="texto-respn">
+                        @if (ViewBag.Usuario.Regiao == null)
+                        {
+                            <span style="color: red;">Não informado</span>
+                        }
+                        else
+                        {
+                            @Html.Raw(ViewBag.Usuario.Regiao)
                         }
                     </div>
                 </li>

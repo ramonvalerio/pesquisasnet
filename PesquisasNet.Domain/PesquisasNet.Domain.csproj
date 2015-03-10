@@ -54,6 +54,7 @@
     <Compile Include="Modelo\Questionario.cs" />
     <Compile Include="Modelo\Responsavel.cs" />
     <Compile Include="Modelo\Usuario.cs" />
+    <Compile Include="Modelo\Variavel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\PesquisaService.cs" />
     <Compile Include="Services\ServiceBase.cs" />

@@ -3,38 +3,85 @@
     Layout = "~/Views/Shared/LayoutSite.cshtml";
 }
 
-<h1>Pesquisas recentes</h1>
-<div class="home-conteudo">
+<script type="text/javascript">
 
-    @if (ViewBag.Pesquisas != null)
-    {
-        <ul>
-            @for (int i = 0; i < 12; i++)
-            {
-                <li>
-                    <img src="~/img/@ViewBag.Pesquisas[0].ImagemPequena">
-                    <p><span>Cod.:</span> @ViewBag.Pesquisas[0].Codigo</p>
-                    <p><span>Divulgação:</span> @DateTime.Now</p>
+    $(document).ready(function () {
 
+    });
 
-                    @Html.ActionLink("Ver", "Detalhe", new { codigo = ViewBag.Pesquisas[0].Codigo }, new { @class = "btn-ver" })
+    function exibirDetalhe(id, titulo, texto, imagem) {
+        $(".thumbnail").click(function () {
+            $("#modal-content").modal({
+                show: true
+            });
+        });
 
-                    @*<a class="btn-ver" href="~/Pesquisa/Detalhe/@ViewBag.Pesquisas[0].Codigo">ver</a>*@
-                </li>
-            }
+        $("#titulo_detalhe").text(titulo);
+        $("#texto_detalhe").text(texto);
 
-            @*@foreach (var pes in ViewBag.Pesquisas)
-                {
-                    <li>
-                        <img src="~/img/@pes.ImagemPequena">
-                        <p><span>Cod.:</span> @pes.Codigo</p>
-                        <p><span>Divulgação:</span> @DateTime.Now</p>
-                        <a class="btn-ver" href="~/Pesquisa/Detalhe/@pes.Codigo">ver</a>
-                    </li>
-                }*@
-        </ul>
+        $("#img-detalhe").attr("src", 'http://file.pesquisasnet.com/img/pesquisa/' + imagem)
     }
 
+</script>
+
+
+
+@if (ViewBag.Pesquisas != null)
+{
+    int contador = 0;
+    int contador_limite = 4;
+
+    for (int i = 0; i < ViewBag.Pesquisas.Count; i++)
+    {
+        if (contador == 0)
+        {
+            Html.Raw("<div class='row'>");
+        }
+
+        <div class="col-sm-6 col-md-3">
+            
+            <div class="thumbnail" onclick="exibirDetalhe('@ViewBag.Pesquisas[i].Codigo', '@ViewBag.Pesquisas[i].Titulo', '@ViewBag.Pesquisas[i].Texto', '@ViewBag.Pesquisas[i].ImagemPequena')" style="cursor:pointer;">
+                <img class="img-responsive" src="http://file.pesquisasnet.com/img/pesquisa/@ViewBag.Pesquisas[i].ImagemPequena" alt="@ViewBag.Pesquisas[i].Titulo">
+                @*</a>*@
+
+                <div class="caption">
+                    <h4>@ViewBag.Pesquisas[i].Titulo</h4>
+                    <p>@ViewBag.Pesquisas[i].Resumo</p>
+                </div>
+            </div>
+            
+        </div>
+    
+        if (contador == contador_limite)
+        {
+            contador = 0;
+            Html.Raw("</div>");
+        }
+    }
+}
+
+<!-- Modal -->
+<div class="col-sm-12">
+    <div id="modal-content" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog img-responsive">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                    <h3 id="titulo_detalhe"></h3>
+                </div>
+                <div class="modal-body">
+                    <img id="img-detalhe" class="img-responsive" style="width:200px; height:200px;" />
+                    
+                    <p id="texto_detalhe">
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <a href="#" class="btn btn-danger" role="button" data-dismiss="modal">Fechar</a>
+                    <a href="#" class="btn btn-success" role="button">Participar</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
-<div class="clear"></div>
+

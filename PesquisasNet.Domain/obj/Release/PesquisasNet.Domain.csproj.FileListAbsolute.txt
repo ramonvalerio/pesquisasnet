@@ -8,3 +8,7 @@ D:\Repositories\Rantec\PesquisasNet\PesquisasNet.Domain\bin\Release\PesquisasNet
 D:\Repositories\Rantec\PesquisasNet\PesquisasNet.Domain\obj\Release\PesquisasNet.Domain.csprojResolveAssemblyReference.cache
 D:\Repositories\Rantec\PesquisasNet\PesquisasNet.Domain\obj\Release\PesquisasNet.Domain.dll
 D:\Repositories\Rantec\PesquisasNet\PesquisasNet.Domain\obj\Release\PesquisasNet.Domain.pdb
+D:\GitHub\PesquisasNet\PesquisasNet.Domain\bin\Release\PesquisasNet.Domain.dll
+D:\GitHub\PesquisasNet\PesquisasNet.Domain\bin\Release\PesquisasNet.Domain.pdb
+D:\GitHub\PesquisasNet\PesquisasNet.Domain\obj\Release\PesquisasNet.Domain.dll
+D:\GitHub\PesquisasNet\PesquisasNet.Domain\obj\Release\PesquisasNet.Domain.pdb
