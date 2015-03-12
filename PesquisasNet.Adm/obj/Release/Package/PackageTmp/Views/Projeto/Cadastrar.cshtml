@@ -34,7 +34,7 @@
             <div class="form-group">
                 <label for="Resumo" class="col-sm-2 control-label">Restrição de participantes(ABEP)</label>
                 <div class="col-sm-6">
-                    <textarea name="Descricao" rows="10" class="form-control" maxlength="400" placeholder="1 ANO SEM TER PARTICIPADO E NO MAXIMO DUAS PARTICIPAÇÕES. NÃO PODEM TRABALHAR COM ÁREAS DO FILTRO BÁSICO."></textarea>
+                    <textarea name="Descricao" rows="10" class="form-control" maxlength="400" placeholder="Ex.: 1 ANO SEM TER PARTICIPADO E NO MAXIMO DUAS PARTICIPAÇÕES. NÃO PODEM TRABALHAR COM ÁREAS DO FILTRO BÁSICO."></textarea>
                 </div>
             </div>
 
@@ -49,8 +49,25 @@
                 <label for="Cidade" class="col-sm-2 control-label">Cidade</label>
                 <div class="col-sm-4">
                     <select class="form-control">
+                        <option value="">Selecione uma cidade</option>
                         <option value="RJ">Rio de Janeiro</option>
                         <option value="SP">São Paulo</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="Cidade" class="col-sm-2 control-label">Critério</label>
+                <div class="col-sm-4">
+                    <select class="form-control">
+                        <option value="" selected="selected">Selecione um critério</option>
+                        <option value="ABEP">ABEP</option>
+                        <option value="SAE">SAE</option>
+                        <option value="FGV">FGV</option>
+                        <option value="IBGE">IBGE</option>
+                        <option value="Kamakura e Mazzon">Kamakura e Mazzon</option>
+                        <option value="FEA">FEA</option>
+                        <option value="PesquisasNet">PesquisasNet</option>
                     </select>
                 </div>
             </div>
