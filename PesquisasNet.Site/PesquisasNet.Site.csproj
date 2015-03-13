@@ -151,7 +151,9 @@
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\PerfilController.cs" />
     <Compile Include="Controllers\PesquisaController.cs" />
+    <Compile Include="Controllers\PoliticaPrivacidadeController.cs" />
     <Compile Include="Controllers\QuestionarioController.cs" />
+    <Compile Include="Controllers\TermosUsoController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -175,6 +177,8 @@
     <Content Include="Views\Album\Edit.cshtml" />
     <Content Include="Views\Questionario\Index.cshtml" />
     <Content Include="Views\Construcao\Index.cshtml" />
+    <Content Include="Views\PoliticaPrivacidade\Index.cshtml" />
+    <Content Include="Views\TermosUso\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

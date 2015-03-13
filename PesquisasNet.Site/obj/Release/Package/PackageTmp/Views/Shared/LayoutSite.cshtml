@@ -1,8 +1,13 @@
-﻿<!DOCTYPE html>
+﻿@if (Session["Usuario"] == null)
+{
+    Response.Redirect("~/");
+}
+
+<!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>PesquisasNet</title>
+		<title>PesquisasNet.com - PesquisasNet Site Oficial‎</title>
 		<meta name="description" content="Pesquisas Net" />
 		<meta name="keywords" content="Pesquisas Net" />
 		<meta name="author" content="" />
@@ -57,7 +62,7 @@
                     {
                         <div class="topmenu">
                             <ul>
-							    <li><a href="~/Login">efetuar login</a></li>
+							    <li><a href="~/Login">Fazer login</a></li>
 						    </ul>
 					    </div>
                     }
@@ -70,10 +75,11 @@
 						<input type="search" name="keywords" class="search-input" placeholder="Informe o que deseja procurar" />
 						<button type="submit" class="btn-search"></button>
 					</form>
+
 					<nav>
 						<ul>
-							<li><a href="~/Pesquisa/Index">Todas</a></li>
-							<li>|</li>
+							@*<li><a href="~/Pesquisa/Index">Todas</a></li>
+							<li>|</li>*@
 							<li><a href="~/Pesquisa/Disponiveis">Disponíveis</a></li>
 							<li>|</li>
 							<li><a href="~/Pesquisa/Indisponiveis">Indisponíveis</a></li>
@@ -82,6 +88,11 @@
 							<li>|</li>
 							<li><a href="~/Pesquisa/EmAndamento">Em andamento</a></li>
 						</ul>
+                        @*<ul class="nav nav-pills" role="tablist">
+                            <li role="presentation" class="active"><a href="#">Home <span class="badge">42</span></a></li>
+                            <li role="presentation"><a href="#">Profile</a></li>
+                            <li role="presentation"><a href="#">Messages <span class="badge">3</span></a></li>
+                        </ul>*@
 					</nav>
 				</div>
 			</div>

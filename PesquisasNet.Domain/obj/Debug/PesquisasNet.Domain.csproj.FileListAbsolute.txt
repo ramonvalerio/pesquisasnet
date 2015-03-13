@@ -21,6 +21,5 @@ D:\repositories\GitHub\PesquisasNet\PesquisasNet.Domain\obj\Debug\PesquisasNet.D
 D:\repositories\GitHub\PesquisasNet\PesquisasNet.Domain\obj\Debug\PesquisasNet.Domain.pdb
 D:\GitHub\PesquisasNet\PesquisasNet.Domain\bin\Debug\PesquisasNet.Domain.dll
 D:\GitHub\PesquisasNet\PesquisasNet.Domain\bin\Debug\PesquisasNet.Domain.pdb
-D:\GitHub\PesquisasNet\PesquisasNet.Domain\obj\Debug\PesquisasNet.Domain.csprojResolveAssemblyReference.cache
 D:\GitHub\PesquisasNet\PesquisasNet.Domain\obj\Debug\PesquisasNet.Domain.dll
 D:\GitHub\PesquisasNet\PesquisasNet.Domain\obj\Debug\PesquisasNet.Domain.pdb

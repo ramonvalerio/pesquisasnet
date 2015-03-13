@@ -1,4 +1,9 @@
-﻿<!DOCTYPE html>
+﻿@if (Session["Usuario"] != null)
+{
+    Response.Redirect("~/Pesquisa");
+}
+
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">

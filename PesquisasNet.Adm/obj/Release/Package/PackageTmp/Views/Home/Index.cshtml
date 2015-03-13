@@ -3,4 +3,128 @@
     Layout = "~/Views/Shared/LayoutAdm.cshtml";
 }
 
+@*https://github.com/nnnick/Chart.js/blob/master/samples/line.html*@
 
+<style>
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    #canvas-holder {
+        width: 30%;
+    }
+</style>
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="btn-group">
+            <h3>Grau de instrução dos perfis</h3>
+            <div id="canvas-holder">
+                <canvas id="chart-area-grau-instrucao" width="1000" height="1000" />
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="btn-group">
+            <h3>Confiabilidade dos perfis</h3>
+            <div id="canvas-holder">
+                <canvas id="chart-area-usuario-confiavel" width="1000" height="1000" />
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-12">
+        <div class="btn-group">
+            <h3>Pesquisas realizadas</h3>
+            <canvas id="canvas-usuarios" height="400" width="1000"></canvas>
+        </div>
+    </div>
+</div>
+
+<script>
+
+    var doughnutData = [
+            {
+                value: 300,
+                color: "#F7464A",
+                highlight: "#FF5A5E",
+                label: "Analfabeto / Fundamental I incompleto"
+            },
+            {
+                value: 50,
+                color: "#46BFBD",
+                highlight: "#5AD3D1",
+                label: "Fundamental I completo / Fundamental II incompleto"
+            },
+            {
+                value: 100,
+                color: "#FDB45C",
+                highlight: "#FFC870",
+                label: "Fundamental II completo / Médio incompleto"
+            },
+            {
+                value: 40,
+                color: "#949FB1",
+                highlight: "#A8B3C5",
+                label: "Médio completo / Superior incompleto"
+            },
+            {
+                value: 120,
+                color: "#4D5360",
+                highlight: "#616774",
+                label: "Superior completo"
+            }
+
+    ];
+
+    var doughnutUsuarioConfiavel = [
+            {
+                value: 50,
+                color: "#F7464A",
+                highlight: "#FF5A5E",
+                label: "Honesto"
+            },
+            {
+                value: 30,
+                color: "#46BFBD",
+                highlight: "#5AD3D1",
+                label: "Duvidoso"
+            }
+    ];
+
+    //Usuários cadastrados
+    var randomScalingFactor = function () { return Math.round(Math.random() * 100) };
+    var lineChartData = {
+        labels: ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"],
+        datasets: [
+            {
+                label: "Pesquisas realizadas",
+                fillColor: "rgba(220,220,220,0.2)",
+                strokeColor: "rgba(220,220,220,1)",
+                pointColor: "rgba(220,220,220,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(220,220,220,1)",
+                data: [randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor()
+                    , randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor()
+                ]
+            }
+        ]
+    }
+
+    window.onload = function () {
+        var ctx = document.getElementById("chart-area-grau-instrucao").getContext("2d");
+        window.myDoughnut = new Chart(ctx).Doughnut(doughnutData, { responsive: true });
+
+        var ctx = document.getElementById("chart-area-usuario-confiavel").getContext("2d");
+        window.myDoughnut = new Chart(ctx).Doughnut(doughnutUsuarioConfiavel, { responsive: true });
+
+        var ctx = document.getElementById("canvas-usuarios").getContext("2d");
+        window.myLine = new Chart(ctx).Line(lineChartData, {
+            responsive: true
+        });
+    };
+</script>

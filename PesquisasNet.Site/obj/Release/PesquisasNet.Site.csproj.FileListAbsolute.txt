@@ -73,3 +73,4 @@ D:\GitHub\PesquisasNet\PesquisasNet.Site\bin\System.Web.WebPages.Deployment.xml
 D:\GitHub\PesquisasNet\PesquisasNet.Site\bin\System.Web.WebPages.Razor.xml
 D:\GitHub\PesquisasNet\PesquisasNet.Site\obj\Release\PesquisasNet.Site.dll
 D:\GitHub\PesquisasNet\PesquisasNet.Site\obj\Release\PesquisasNet.Site.pdb
+D:\GitHub\PesquisasNet\PesquisasNet.Site\obj\Release\PesquisasNet.Site.csprojResolveAssemblyReference.cache

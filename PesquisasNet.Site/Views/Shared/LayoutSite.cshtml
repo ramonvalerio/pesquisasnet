@@ -1,8 +1,13 @@
-﻿<!DOCTYPE html>
+﻿@if (Session["Usuario"] == null)
+{
+    Response.Redirect("~/");
+}
+
+<!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>PesquisasNet</title>
+		<title>PesquisasNet.com - PesquisasNet Site Oficial‎</title>
 		<meta name="description" content="Pesquisas Net" />
 		<meta name="keywords" content="Pesquisas Net" />
 		<meta name="author" content="" />
@@ -57,7 +62,7 @@
                     {
                         <div class="topmenu">
                             <ul>
-							    <li><a href="~/Login">efetuar login</a></li>
+							    <li><a href="~/Login">Fazer login</a></li>
 						    </ul>
 					    </div>
                     }
@@ -66,14 +71,13 @@
 			<div class="logo-menu">
 				<div class="logo-pn"><a href="~/Pesquisa"><img src="http://file.pesquisasnet.com/img/site/logopn.png"></a></div>
 				<div class="form-menu">
-					<form action="">
+					@*<form action="">
 						<input type="search" name="keywords" class="search-input" placeholder="Informe o que deseja procurar" />
 						<button type="submit" class="btn-search"></button>
-					</form>
+					</form>*@
+
 					<nav>
-						<ul>
-							<li><a href="~/Pesquisa/Index">Todas</a></li>
-							<li>|</li>
+						@*<ul>
 							<li><a href="~/Pesquisa/Disponiveis">Disponíveis</a></li>
 							<li>|</li>
 							<li><a href="~/Pesquisa/Indisponiveis">Indisponíveis</a></li>
@@ -81,7 +85,13 @@
 							<li><a href="~/Pesquisa/Participadas">Participadas</a></li>
 							<li>|</li>
 							<li><a href="~/Pesquisa/EmAndamento">Em andamento</a></li>
-						</ul>
+						</ul>*@
+                        <ul class="nav nav-pills" role="tablist">
+                            <li role="presentation" class="active"><a href="~/Pesquisa/Disponiveis">Disponíveis <span class="badge">5</span></a></li>
+                            <li role="presentation" class="active"><a href="~/Pesquisa/Indisponiveis">Indisponíveis <span class="badge">1</span></a></li>
+                            <li role="presentation" class="active"><a href="~/Pesquisa/Participadas">Participadas <span class="badge">0</span></a></li>
+                            @*<li role="presentation" class="active"><a href="~/Pesquisa/EmAndamento">Em andamento <span class="badge">0</span></a></li>*@
+                        </ul>
 					</nav>
 				</div>
 			</div>

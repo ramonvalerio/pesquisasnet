@@ -35,6 +35,11 @@ namespace PesquisasNet.Site.Controllers
                 case "Em andamento":
                     pesquisas = pesquisas.Where(x => x.Status == "Em andamento").ToList();
                     break;
+
+                default:
+                    pesquisas = pesquisas.Where(x => x.Status == "Disponivel").ToList();
+                    break;
+
             }
 
             ViewBag.Pesquisas = pesquisas;
