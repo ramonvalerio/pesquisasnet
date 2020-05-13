@@ -1,0 +1,18 @@
+.card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 2px;
+  }
+
+  @media all and (max-width: 1000px) {
+    .card-container {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media all and (max-width: 600px) {
+    .card-container {
+      grid-template-columns: 1fr;
+    }
+  }

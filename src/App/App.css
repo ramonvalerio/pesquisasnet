@@ -1,0 +1,17 @@
+.item1 { grid-area: main; }
+.item2 { grid-area: body; }
+.item3 { grid-area: footer; }
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+      'main main main'
+      'body body body'
+      'footer footer footer';
+    grid-gap: 10px;
+    padding: 10px;
+  }
+  
+  .grid-container > div {
+    padding: 20px 0;
+  }

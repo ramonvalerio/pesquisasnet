@@ -1,0 +1,28 @@
+.Header{
+    display: flex;
+    justify-content: space-between;
+    background-color: royalblue;
+    padding-left: 20px;
+}
+
+.logo-title
+{
+    color: white;
+}
+
+.logo-title2
+{
+    color:coral;
+}
+
+.menu ul, li{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 1.2em;
+    font-family: Arial;
+}
+
+.menu a{
+    text-decoration: none;
+}
